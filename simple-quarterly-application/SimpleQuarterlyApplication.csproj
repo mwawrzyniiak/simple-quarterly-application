@@ -7,4 +7,8 @@
     <RootNamespace>simple_quarterly_application</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="HotChocolate.AspNetCore" Version="12.15.2" />
+  </ItemGroup>
+
 </Project>
