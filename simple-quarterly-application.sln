@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleQuarterlyApplication.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleQuarterlyApplication.Infrastructure", "SimpleQuarterlyApplication.Infrastructure\SimpleQuarterlyApplication.Infrastructure.csproj", "{1B7B253A-DEAD-4478-8E3E-1806F4904315}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83F7E5B3-CDDA-436A-A36E-3F5AD4FD975B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F39CB800-006E-4352-AAE6-FA485972DE0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67FC5A74-2CFB-4C38-8045-6AA814A1516A} = {83F7E5B3-CDDA-436A-A36E-3F5AD4FD975B}
+		{9B1F6FBE-D1F5-4E7D-BF77-6309A89935AA} = {83F7E5B3-CDDA-436A-A36E-3F5AD4FD975B}
+		{1B7B253A-DEAD-4478-8E3E-1806F4904315} = {83F7E5B3-CDDA-436A-A36E-3F5AD4FD975B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5AC0A97-27E7-47E4-BA78-7A9B1A94226B}
