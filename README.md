@@ -1,5 +1,18 @@
 # simple-quarterly-application  
 
+The GraphQL API for the job board or recruiting platform would allow users to interact with data related to job openings, candidates, and companies. Some possible types that could be included in the schema are:
+
+Job: This type could include fields such as title, description, location, and salary.
+Candidate: This type could include fields such as name, email, resume, and skills.
+Company: This type could include fields such as name, industry, website, and description.
+Queries and mutations could be defined to allow users to perform actions such as:
+
+Searching for jobs by keyword, location, or industry
+Applying to a job as a candidate
+Creating and updating job listings as an employer
+Viewing and updating candidate profiles
+Viewing and updating company profiles
+The GraphQL API could also include additional functionality, such as the ability to save job searches or favorite job listings, or to receive notifications when new jobs matching certain criteria are added to the platform.
 
 ## Table of contents
 TODO.
