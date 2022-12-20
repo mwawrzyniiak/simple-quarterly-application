@@ -11,8 +11,4 @@
     <PackageReference Include="HotChocolate.AspNetCore" Version="12.15.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SimpleQuarterlyApplication.Core\SimpleQuarterlyApplication.Core.csproj" />
-  </ItemGroup>
-
 </Project>
