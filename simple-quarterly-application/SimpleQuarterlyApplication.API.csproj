@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SimpleQuarterlyApplication.Core\SimpleQuarterlyApplication.Core.csproj" />
+    <ProjectReference Include="..\SimpleQuarterlyApplication.Infrastructure\SimpleQuarterlyApplication.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
