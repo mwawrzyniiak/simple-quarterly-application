@@ -13,11 +13,8 @@ namespace SimpleQuarterlyApplication.Core.Services
             _jobRepository = jobRepository;
         }
 
-        public async Task<JobType> Create(JobType jobType)
-        {
-            return await _jobRepository.Create(jobType);
-        }
+        public async Task<IEnumerable<Job>> Get() => await _jobRepository.Get();
 
-        public async Task<IEnumerable<JobType>> Get() => await _jobRepository.Get();
+        public async Task<Job> Create(Job job) => await _jobRepository.Create(job);
     }
 }

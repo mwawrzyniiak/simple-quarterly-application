@@ -13,8 +13,8 @@ namespace SimpleQuarterlyApplication.Core.Services
             _companyRepository = companyRepository;
         }
 
-        public async Task<CompanyType> Create(CompanyType companyType) => await _companyRepository.Create(companyType);
+        public async Task<IEnumerable<Company>> Get() => await _companyRepository.Get();
 
-        public async Task<IEnumerable<CompanyType>> Get() => await _companyRepository.Get();
+        public async Task<Company> Create(Company company) => await _companyRepository.Create(company);
     }
 }

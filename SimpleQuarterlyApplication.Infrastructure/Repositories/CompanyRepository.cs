@@ -10,13 +10,13 @@ namespace SimpleQuarterlyApplication.Infrastructure.Repositories
         {
         }
 
-        public async Task<IEnumerable<CompanyType>> Get() => await _context.Companies.ToListAsync();
+        public async Task<IEnumerable<Company>> Get() => await _context.Companies.ToListAsync();
 
-        public async Task<CompanyType> Create(CompanyType companyType)
+        public async Task<Company> Create(Company company)
         {
-            await _context.Companies.AddAsync(companyType);
+            await _context.Companies.AddAsync(company);
             await _context.SaveChangesAsync();
-            return companyType;
+            return company;
         }
     }
 }

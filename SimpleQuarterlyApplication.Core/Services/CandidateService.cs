@@ -13,8 +13,8 @@ namespace SimpleQuarterlyApplication.Core.Services
             _candidateRepository = candidateRepository;
         }
 
-        public async Task<IEnumerable<CandidateType>> Get() => await _candidateRepository.Get();
+        public async Task<IEnumerable<Candidate>> Get() => await _candidateRepository.Get();
 
-        public async Task<CandidateType> Create(CandidateType candidateType) => await _candidateRepository.Create(candidateType);
+        public async Task<Candidate> Create(Candidate candidate) => await _candidateRepository.Create(candidate);
     }
 }

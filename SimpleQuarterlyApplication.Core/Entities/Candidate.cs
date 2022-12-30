@@ -3,7 +3,7 @@
 namespace SimpleQuarterlyApplication.Core.Entities
 {
     [ObjectType(Name = "Candidate")]
-    public class CandidateType
+    public class Candidate
     {
         public string? Id { get; set; }
 

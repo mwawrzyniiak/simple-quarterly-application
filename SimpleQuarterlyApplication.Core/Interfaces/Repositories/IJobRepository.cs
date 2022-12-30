@@ -4,7 +4,7 @@ namespace SimpleQuarterlyApplication.Core.Interfaces.Repositories
 {
     public interface IJobRepository
     {
-        Task<IEnumerable<JobType>> Get();
-        Task<JobType> Create(JobType jobType);
+        Task<IEnumerable<Job>> Get();
+        Task<Job> Create(Job job);
     }
 }

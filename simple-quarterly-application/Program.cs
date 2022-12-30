@@ -20,21 +20,21 @@ builder.Services.AddScoped<IJobRepository, JobRepository>();
 var app = builder.Build();
 
 app.MapGet("/candidates", async (ICandidateService candidateService) => await candidateService.Get());
-app.MapPost("/candidates", async (ICandidateService candidateService, CandidateType candidate) =>
+app.MapPost("/candidates", async (ICandidateService candidateService, Candidate candidate) =>
 {
     await candidateService.Create(candidate);
     return Results.Created($"/candidates/{candidate.Id}", candidate);
 });
 
 app.MapGet("/companies", async (ICompanyService companyService) => await companyService.Get());
-app.MapPost("/companies", async (ICompanyService companyService, CompanyType company) =>
+app.MapPost("/companies", async (ICompanyService companyService, Company company) =>
 {
     await companyService.Create(company);
     return Results.Created($"/companies/{company.Id}", company);
 });
 
 app.MapGet("/jobs", async (IJobService jobService) => await jobService.Get());
-app.MapPost("/jobs", async (IJobService jobService, JobType job) =>
+app.MapPost("/jobs", async (IJobService jobService, Job job) =>
 {
     await jobService.Create(job);
     return Results.Created($"/jobs/{job.Id}", job);

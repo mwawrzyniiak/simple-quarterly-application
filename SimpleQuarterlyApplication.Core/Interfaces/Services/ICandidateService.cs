@@ -4,7 +4,7 @@ namespace SimpleQuarterlyApplication.Core.Interfaces.Services
 {
     public interface ICandidateService
     {
-        Task<IEnumerable<CandidateType>> Get();
-        Task<CandidateType> Create(CandidateType candidateType);
+        Task<IEnumerable<Candidate>> Get();
+        Task<Candidate> Create(Candidate candidate);
     }
 }

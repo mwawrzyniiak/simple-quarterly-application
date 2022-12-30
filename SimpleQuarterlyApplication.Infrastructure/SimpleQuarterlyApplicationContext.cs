@@ -7,9 +7,9 @@ namespace SimpleQuarterlyApplication.Infrastructure
 {
     public class SimpleQuarterlyApplicationContext : DbContext
     {
-        public DbSet<CandidateType> Candidates { get; set; }
-        public DbSet<CompanyType> Companies { get; set; }
-        public DbSet<JobType> Jobs { get; set; }
+        public DbSet<Candidate> Candidates { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Job> Jobs { get; set; }
 
         public SimpleQuarterlyApplicationContext()
         {
@@ -24,15 +24,15 @@ namespace SimpleQuarterlyApplication.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<CandidateType>()
+            modelBuilder.Entity<Candidate>()
                 .ToContainer("Candidates")
                 .HasPartitionKey(e => e.Id);
 
-            modelBuilder.Entity<CompanyType>()
+            modelBuilder.Entity<Company>()
                 .ToContainer("Companies")
                 .HasPartitionKey(e => e.Id);
 
-            modelBuilder.Entity<JobType>()
+            modelBuilder.Entity<Job>()
                 .ToContainer("Jobs")
                 .HasPartitionKey(e => e.Id);
         }
