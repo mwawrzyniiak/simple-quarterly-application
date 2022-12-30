@@ -19,7 +19,8 @@ builder.Services.AddScoped<IJobRepository, JobRepository>();
 
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<CandidateQuery>();
+    .AddQueryType(q => q.Name("Query"))
+    .AddType<CandidateQuery>();
 
 var app = builder.Build();
 
