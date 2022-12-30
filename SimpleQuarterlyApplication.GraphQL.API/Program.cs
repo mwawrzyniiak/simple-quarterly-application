@@ -4,6 +4,7 @@ using SimpleQuarterlyApplication.Core.Services;
 using SimpleQuarterlyApplication.Infrastructure.Repositories;
 using SimpleQuarterlyApplication.Infrastructure;
 using SimpleQuarterlyApplication.GraphQL.API.Queries;
+using SimpleQuarterlyApplication.GraphQL.API.Mutations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +21,9 @@ builder.Services.AddScoped<IJobRepository, JobRepository>();
 builder.Services
     .AddGraphQLServer()
     .AddQueryType(q => q.Name("Query"))
-    .AddType<CandidateQuery>();
+    .AddType<CandidateQuery>()
+    .AddMutationType(q => q.Name("Mutation"))
+    .AddType<CandidateMutation>();
 
 var app = builder.Build();
 
