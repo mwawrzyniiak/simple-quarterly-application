@@ -1,4 +1,5 @@
-﻿using SimpleQuarterlyApplication.Core.Interfaces.Repositories;
+﻿using SimpleQuarterlyApplication.Core.Entities;
+using SimpleQuarterlyApplication.Core.Interfaces.Repositories;
 using SimpleQuarterlyApplication.Core.Interfaces.Services;
 
 namespace SimpleQuarterlyApplication.Core.Services
@@ -11,5 +12,9 @@ namespace SimpleQuarterlyApplication.Core.Services
         {
             _companyRepository = companyRepository;
         }
+
+        public async Task<CompanyType> Create(CompanyType companyType) => await _companyRepository.Create(companyType);
+
+        public async Task<IEnumerable<CompanyType>> Get() => await _companyRepository.Get();
     }
 }

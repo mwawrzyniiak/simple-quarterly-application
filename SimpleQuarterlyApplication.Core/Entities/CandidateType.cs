@@ -5,7 +5,7 @@ namespace SimpleQuarterlyApplication.Core.Entities
     [ObjectType(Name = "Candidate")]
     public class CandidateType
     {
-        public int Id { get; set; }
+        public string? Id { get; set; }
 
         public string? Name { get; set; }
 
