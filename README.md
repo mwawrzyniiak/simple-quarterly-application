@@ -33,6 +33,8 @@ TODO
 ## Dependencies
 
 simple-quarterly-application repository depends on a few packages:
+Microsoft.EntityFrameworkcore.Cosmos
+HotChocolate.AspNetCore
 
 TODO
 
@@ -51,6 +53,8 @@ What things you need to install the software and how to install them
 ```
 git clone https://github.com/mwawrzyniiak/simple-quarterly-application.git
 ```
+  
+* [CosmosDB Emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=ssl-netstd21) - for work with CosmosDB
 
 # Deployment  
 
