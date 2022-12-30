@@ -1,5 +1,7 @@
 # simple-quarterly-application  
 
+This repository was created as a result of work on a quarterly project related to the development of backend development skills.  
+
 The GraphQL API for the job board or recruiting platform would allow users to interact with data related to job openings, candidates, and companies. Some possible types that could be included in the schema are:
   
 * Job: This type could include fields such as title, description, location, and salary.  
