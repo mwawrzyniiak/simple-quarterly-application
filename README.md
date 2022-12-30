@@ -7,7 +7,7 @@ The GraphQL API for the job board or recruiting platform would allow users to in
 * Company: This type could include fields such as name, industry, website, and description.  
   
 Queries and mutations could be defined to allow users to perform actions such as:    
-* Searching for jobs by keyword, location, or industry  
+* Searching for jobs by keyword or location
 * Applying to a job as a candidate  
 * Creating and updating job listings as an employer  
 * Viewing and updating candidate profiles  
@@ -32,7 +32,9 @@ TODO
 
 ## Dependencies
 
-simple-quarterly-application repository depends on a few packages:
+simple-quarterly-application repository depends on a few packages:  
+* [Microsoft.EntityFrameworkcore.Cosmos](https://learn.microsoft.com/pl-pl/ef/core/providers/cosmos/?tabs=dotnet-core-cli)  
+* [HotChocolate.AspNetCore](https://chillicream.com/docs/hotchocolate/v12/get-started)    
 
 TODO
 
@@ -51,6 +53,8 @@ What things you need to install the software and how to install them
 ```
 git clone https://github.com/mwawrzyniiak/simple-quarterly-application.git
 ```
+  
+* [CosmosDB Emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=ssl-netstd21) - for work with CosmosDB
 
 # Deployment  
 
