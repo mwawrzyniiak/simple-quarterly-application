@@ -40,9 +40,24 @@ The GraphQL API for the job board or recruiting platform would allow users to in
 Queries and mutations could be defined to allow users to perform actions such as:    
 * Searching for jobs by keyword or location
 * Applying to a job as a candidate  
-* Creating and updating job listings as an employer  
-* Viewing and updating candidate profiles  
-* Viewing and updating company profiles  
+* Creating/Updating/Viewing jobs.  
+* Creating/Updating/Viewing candidate profile
+* Creating/Updating/Viewing company profiles  
+
+### Query
+* candidates      -> get all candidates.  
+* companies       -> get all companies.  
+* jobs            -> get all jobs.  
+* jobsByKeyword   -> get all jobs that contain keyword.  
+* jobsByLocation  -> get all jobs by location.  
+
+### Mutation
+* createCandidate     -> creating candidate profile.  
+* updateCandidateById -> updating candidate profile by id. 
+* createCompany       -> creating company.  
+* updateCompanyById   -> updateing company by id.  
+* createJob           -> creating new job's ad.  
+* updateJob           -> updating job's ad  
 
 ## Table of contents
 TODO.
