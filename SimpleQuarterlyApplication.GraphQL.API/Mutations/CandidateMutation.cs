@@ -1,5 +1,5 @@
-﻿using SimpleQuarterlyApplication.Core.Entities;
-using SimpleQuarterlyApplication.Core.Entities.GraphQLInputs;
+﻿using SimpleQuarterlyApplication.Core.Entities.GraphQLInputs;
+using SimpleQuarterlyApplication.Core.Entities;
 using SimpleQuarterlyApplication.Core.Interfaces.Services;
 using SimpleQuarterlyApplication.GraphQL.API.Extensions;
 
@@ -24,9 +24,21 @@ namespace SimpleQuarterlyApplication.GraphQL.API.Mutations
             return await candidateService.Create(candidate);
         }
 
-       // public async Task<bool> UpdateCandidateAsync(string id, CandidateInput candidateInput, [Service] ICandidateService candidateService)
-       // {
-       //     var candidate = await candidateService.
-       // }
+        [GraphQLName("updateCandidateById")]
+        [GraphQLDescription("Update candidate by id.")]
+        public async Task<Candidate> UpdateCandidateAsync(string id, CandidateInput candidateInput, [Service] ICandidateService candidateService)
+        {
+            var candidate = await candidateService.Get(id);
+            if (candidate == null)
+                throw new GraphQLException(new Error("Candidate not found.", "CANDIDATE_NOT_FOUND"));
+
+            candidate.Name = candidateInput.Name;
+            candidate.Skills = candidateInput.Skills;
+            candidate.Email = candidateInput.Email;
+            candidate.Resume = candidateInput.Resume;
+
+            await candidateService.Update(candidate, id);
+            return candidate;
+        }
     }
 }

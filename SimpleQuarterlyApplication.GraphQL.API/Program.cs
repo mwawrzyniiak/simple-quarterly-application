@@ -21,9 +21,12 @@ builder.Services.AddScoped<IJobRepository, JobRepository>();
 builder.Services
     .AddGraphQLServer()
     .AddQueryType(q => q.Name("Query"))
+    .AddType<JobQuery>()
     .AddType<CandidateQuery>()
     .AddMutationType(q => q.Name("Mutation"))
+    .AddType<JobMutation>()
     .AddType<CandidateMutation>();
+
 
 var app = builder.Build();
 
