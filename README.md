@@ -11,7 +11,21 @@ Quarterly target requirements:
 ![System Diagram](https://user-images.githubusercontent.com/35369071/210336315-ae1dd7c7-396d-410f-8c10-b6d3e4e27821.png)
 
 ## Minimal API  
-
+### Candidates  
+* /candidates -> GET - get all candidates.  
+* /candidates -> POST - create new candidate.  
+* /candidates/{id} -> PUT -> update candidate by id.  
+* /candidates/{id} -> DELETE -> delete candidate by id.  
+### Companies  
+* /companies -> GET - get all companies.  
+* /companies -> POST - create new company.  
+* /companies/{id} -> PUT -> update company by id.  
+* /companies/{id} -> DELETE -> delete company by id.  
+### Jobs  
+* /jobs -> GET - get all jobs.  
+* /jobs -> POST - create new job.  
+* /jobs/{id} -> PUT -> update job by id.  
+* /jobs/{id} -> DELETE -> delete job by id.  
 
 ## GraphQL API  
 The GraphQL API for the job board or recruiting platform would allow users to interact with data related to job openings, candidates, and companies. Some possible types that could be included in the schema are:
