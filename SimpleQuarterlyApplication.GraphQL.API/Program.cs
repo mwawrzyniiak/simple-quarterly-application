@@ -23,9 +23,11 @@ builder.Services
     .AddQueryType(q => q.Name("Query"))
     .AddType<JobQuery>()
     .AddType<CandidateQuery>()
+    .AddType<CompanyQuery>()
     .AddMutationType(q => q.Name("Mutation"))
     .AddType<JobMutation>()
-    .AddType<CandidateMutation>();
+    .AddType<CandidateMutation>()
+    .AddType<CompanyMutation>();
 
 
 var app = builder.Build();
