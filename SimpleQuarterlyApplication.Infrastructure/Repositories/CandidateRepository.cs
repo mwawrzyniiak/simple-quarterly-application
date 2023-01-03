@@ -11,6 +11,7 @@ namespace SimpleQuarterlyApplication.Infrastructure.Repositories
         }
 
         public async Task<IEnumerable<Candidate>> Get() => await _context.Candidates.ToListAsync();
+        public async Task<Candidate> Get(string id) => await _context.Candidates.FirstOrDefaultAsync(x => x.Id.Equals(id));
 
         public async Task<Candidate> Create(Candidate candidate)
         {

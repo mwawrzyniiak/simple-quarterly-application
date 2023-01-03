@@ -11,6 +11,7 @@ namespace SimpleQuarterlyApplication.Infrastructure.Repositories
         }
 
         public async Task<IEnumerable<Job>> Get() => await _context.Jobs.ToListAsync();
+        public async Task<Job> Get(string id) => await _context.Jobs.FirstOrDefaultAsync(x => x.Id.Equals(id));
 
         public async Task<Job> Create(Job job)
         {

@@ -11,6 +11,7 @@ namespace SimpleQuarterlyApplication.Infrastructure.Repositories
         }
 
         public async Task<IEnumerable<Company>> Get() => await _context.Companies.ToListAsync();
+        public async Task<Company> Get(string id) => await _context.Companies.FirstOrDefaultAsync(x => x.Id.Equals(id));
 
         public async Task<Company> Create(Company company)
         {

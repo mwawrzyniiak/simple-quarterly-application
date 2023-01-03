@@ -23,5 +23,10 @@ namespace SimpleQuarterlyApplication.GraphQL.API.Mutations
 
             return await candidateService.Create(candidate);
         }
+
+       // public async Task<bool> UpdateCandidateAsync(string id, CandidateInput candidateInput, [Service] ICandidateService candidateService)
+       // {
+       //     var candidate = await candidateService.
+       // }
     }
 }

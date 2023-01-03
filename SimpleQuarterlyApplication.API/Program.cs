@@ -22,6 +22,7 @@ var app = builder.Build();
 #region CANDIDATE CRUD
 
 app.MapGet("/candidates", async (ICandidateService candidateService) => await candidateService.Get());
+app.MapGet("/candidates/{id}", async (ICandidateService candidateService, string id) => await candidateService.Get(id));
 app.MapPost("/candidates", async (ICandidateService candidateService, Candidate candidate) =>
 {
     await candidateService.Create(candidate);
@@ -43,6 +44,7 @@ app.MapDelete("/candidates/{id}", async (ICandidateService candidateService, str
 #region COMPANY CRUD
 
 app.MapGet("/companies", async (ICompanyService companyService) => await companyService.Get());
+app.MapGet("/companies/{id}", async (ICompanyService companyService, string id) => await companyService.Get(id));
 app.MapPost("/companies", async (ICompanyService companyService, Company company) =>
 {
     await companyService.Create(company);
@@ -64,6 +66,7 @@ app.MapDelete("/companies/{id}", async (ICompanyService companyService, string i
 #region JOB CRUd
 
 app.MapGet("/jobs", async (IJobService jobService) => await jobService.Get());
+app.MapGet("/jobs/{id}", async (IJobService jobService, string id) => await jobService.Get(id));
 app.MapPost("/jobs", async (IJobService jobService, Job job) =>
 {
     await jobService.Create(job);
