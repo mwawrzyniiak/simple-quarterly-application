@@ -1,4 +1,18 @@
 # simple-quarterly-application  
+## Table of contents
+* [Getting Started](#getting-started)
+* [Project Diagram](#project-diagram)
+* [Minimal API](#minimal-api)
+* [GraphQL API](#graphql-api)
+* [Dependencies](#dependencies)
+* [Built With](#built-with)
+* [Prerequsties](#prerequsties)
+* [Deployment](#deployment)
+* [Contributing](#contributing)
+* [Authors](#authors)
+* [License](#license)
+
+## Getting Started  
 This repository was created as a result of work on a quarterly project related to the development of backend development skills.  
 The code contained in this repository was created for the purpose of learning individual .net elements.  
 Additionally, the results of this work meet the requirements for the quarterly task carried out in 2022/2023.  
@@ -7,7 +21,7 @@ Quarterly target requirements:
 * Creating and presenting to the team a web application that utilizes some of the technologies included in the Backend Web Developer career path.  
 * Including the use of ApplicationInsights.  
 
-# Project Diagram  
+## Project Diagram  
 ![System Diagram](https://user-images.githubusercontent.com/35369071/210336315-ae1dd7c7-396d-410f-8c10-b6d3e4e27821.png)
 
 ## Minimal API  
@@ -58,21 +72,6 @@ Queries and mutations could be defined to allow users to perform actions such as
 * **updateCompanyById** - updateing company by id.  
 * **createJob** - creating new job's ad.  
 * **updateJob** - updating job's ad  
-
-## Table of contents
-TODO.
-* [Getting Started](#getting-started)
-* [Dependencies](#dependencies)
-* [Built With](#built-with)
-* [Prerequsties](#prerequsties)
-* [Deployment](#deployment)
-* [Contributing](#contributing)
-* [Authors](#authors)
-* [License](#license)
-
-## Getting Started  
-
-TODO
 
 ## Dependencies
 
