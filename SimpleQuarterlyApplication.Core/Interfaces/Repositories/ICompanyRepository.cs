@@ -6,5 +6,7 @@ namespace SimpleQuarterlyApplication.Core.Interfaces.Repositories
     {
         Task<IEnumerable<Company>> Get();
         Task<Company> Create(Company company);
+        Task<bool> Update(Company company, string id);
+        Task<bool> Delete(string id);
     }
 }

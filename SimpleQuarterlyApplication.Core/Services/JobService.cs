@@ -14,7 +14,8 @@ namespace SimpleQuarterlyApplication.Core.Services
         }
 
         public async Task<IEnumerable<Job>> Get() => await _jobRepository.Get();
-
         public async Task<Job> Create(Job job) => await _jobRepository.Create(job);
+        public async Task<bool> Update(Job job, string id) => await _jobRepository.Update(job, id);
+        public async Task<bool> Delete(string id) => await _jobRepository.Delete(id);
     }
 }
