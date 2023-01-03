@@ -41,8 +41,6 @@ Queries and mutations could be defined to allow users to perform actions such as
 * Viewing and updating candidate profiles  
 * Viewing and updating company profiles  
 
-The GraphQL API could also include additional functionality, such as the ability to save job searches or favorite job listings, or to receive notifications when new jobs matching certain criteria are added to the platform.
-
 ## Table of contents
 TODO.
 * [Getting Started](#getting-started)
