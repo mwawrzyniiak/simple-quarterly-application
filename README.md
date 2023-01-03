@@ -28,7 +28,7 @@ Quarterly target requirements:
 * /jobs/{id} -> DELETE -> delete job by id.  
 
 ## GraphQL API  
-The GraphQL API for the job board or recruiting platform would allow users to interact with data related to job openings, candidates, and companies. Some possible types that could be included in the schema are:
+The GraphQL API for the job board or recruiting platform would allow users to interact with data related to job openings, candidates, and companies. Some possible types included in the schema are:
   
 * Job: This type could include fields such as title, description, location, and salary.  
 * Candidate: This type could include fields such as name, email, resume, and skills.  
