@@ -12,23 +12,23 @@ Quarterly target requirements:
 
 ## Minimal API  
 ### Candidates  
-* /candidates       -> GET - get all candidates.  
-* /candidates/{id}  -> GET - get candidate by id.
-* /candidates       -> POST - create new candidate.  
-* /candidates/{id}  -> PUT - update candidate by id.  
-* /candidates/{id}  -> DELETE - delete candidate by id.  
+* **/candidates**       -> GET - get all candidates.  
+* **/candidates/{id}**  -> GET - get candidate by id.
+* **/candidates**       -> POST - create new candidate.  
+* **/candidates/{id}**  -> PUT - update candidate by id.  
+* **/candidates/{id}**  -> DELETE - delete candidate by id.  
 ### Companies  
-* /companies        -> GET - get all companies.  
-* /companies/{id}   -> GET - get company by id.
-* /companies        -> POST - create new company.  
-* /companies/{id}   -> PUT - update company by id.  
-* /companies/{id}   -> DELETE - delete company by id.  
+* **/companies**        -> GET - get all companies.  
+* **/companies/{id}**   -> GET - get company by id.
+* **/companies**        -> POST - create new company.  
+* **/companies/{id}**   -> PUT - update company by id.  
+* **/companies/{id}**   -> DELETE - delete company by id.  
 ### Jobs  
-* /jobs             -> GET - get all jobs. 
-* /jobs/{id}        -> GET - get job by id. 
-* /jobs             -> POST - create new job.  
-* /jobs/{id}        -> PUT - update job by id.  
-* /jobs/{id}        -> DELETE - delete job by id.  
+* **/jobs**             -> GET - get all jobs. 
+* **/jobs/{id}**        -> GET - get job by id. 
+* **/jobs**             -> POST - create new job.  
+* **/jobs/{id}**        -> PUT - update job by id.  
+* **/jobs/{id}**        -> DELETE - delete job by id.  
 
 ## GraphQL API  
 The GraphQL API for the job board or recruiting platform would allow users to interact with data related to job openings, candidates, and companies. Some possible types included in the schema are:
@@ -45,19 +45,19 @@ Queries and mutations could be defined to allow users to perform actions such as
 * Creating/Updating/Viewing company profiles  
 
 ### Query
-* candidates      -> get all candidates.  
-* companies       -> get all companies.  
-* jobs            -> get all jobs.  
-* jobsByKeyword   -> get all jobs that contain keyword.  
-* jobsByLocation  -> get all jobs by location.  
+* **candidates**      -> get all candidates.  
+* **companies**       -> get all companies.  
+* **jobs**            -> get all jobs.  
+* **jobsByKeyword**   -> get all jobs that contain keyword.  
+* **jobsByLocation**  -> get all jobs by location.  
 
 ### Mutation
-* createCandidate     -> creating candidate profile.  
-* updateCandidateById -> updating candidate profile by id. 
-* createCompany       -> creating company.  
-* updateCompanyById   -> updateing company by id.  
-* createJob           -> creating new job's ad.  
-* updateJob           -> updating job's ad  
+* **createCandidate**     -> creating candidate profile.  
+* **updateCandidateById** -> updating candidate profile by id. 
+* **createCompany**       -> creating company.  
+* **updateCompanyById**   -> updateing company by id.  
+* **createJob**           -> creating new job's ad.  
+* **updateJob**           -> updating job's ad  
 
 ## Table of contents
 TODO.
