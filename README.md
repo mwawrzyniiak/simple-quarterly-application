@@ -1,6 +1,13 @@
 # simple-quarterly-application  
-
 This repository was created as a result of work on a quarterly project related to the development of backend development skills.  
+The code contained in this repository was created for the purpose of learning individual .net elements.  
+Additionally, the results of this work meet the requirements for the quarterly task carried out in 2022/2023.  
+
+Quarterly target requirements:  
+* Creating and presenting to the team a web application that utilizes some of the technologies included in the Backend Web Developer career path.  
+* Including the use of ApplicationInsights.  
+
+
 
 The GraphQL API for the job board or recruiting platform would allow users to interact with data related to job openings, candidates, and companies. Some possible types that could be included in the schema are:
   
