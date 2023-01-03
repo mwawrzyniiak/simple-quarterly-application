@@ -7,7 +7,8 @@ Quarterly target requirements:
 * Creating and presenting to the team a web application that utilizes some of the technologies included in the Backend Web Developer career path.  
 * Including the use of ApplicationInsights.  
 
-
+# Project Diagram  
+![System Diagram](https://user-images.githubusercontent.com/35369071/210336315-ae1dd7c7-396d-410f-8c10-b6d3e4e27821.png)
 
 The GraphQL API for the job board or recruiting platform would allow users to interact with data related to job openings, candidates, and companies. Some possible types that could be included in the schema are:
   
