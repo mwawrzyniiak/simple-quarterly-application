@@ -27,6 +27,7 @@ Quarterly target requirements:
 
 ## Solution Architecture
 ![Architecture](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/media/image5-7.png)
+source: https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/media/image5-7.png  
 
 ## Minimal API  
 ### Candidates  
