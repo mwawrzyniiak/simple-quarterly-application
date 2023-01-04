@@ -84,12 +84,6 @@ simple-quarterly-application repository depends on a few packages:
 * [Microsoft.EntityFrameworkcore.Cosmos](https://learn.microsoft.com/pl-pl/ef/core/providers/cosmos/?tabs=dotnet-core-cli)  
 * [HotChocolate.AspNetCore](https://chillicream.com/docs/hotchocolate/v12/get-started)    
 
-TODO
-
-Some external dependencies:
-
-TODO
-
 ## Built With
 
 * [Visual Studio](https://visualstudio.microsoft.com/pl/vs/) - Idea
