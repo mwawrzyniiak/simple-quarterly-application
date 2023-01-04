@@ -105,7 +105,7 @@ git clone https://github.com/mwawrzyniiak/simple-quarterly-application.git
 * [CosmosDB Emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=ssl-netstd21) - for work with CosmosDB
 
 ## Deployment  
-Git close, rebuild and run! :) 
+Git clone, rebuild and run! :) 
 
 ## Contributing
 
