@@ -8,6 +8,13 @@ namespace SimpleQuarterlyApplication.GraphQL.API.Mutations
     [ExtendObjectType("Mutation")]
     public class JobMutation
     {
+        private readonly ILogger _logger;
+
+        public JobMutation(ILogger<JobMutation> logger)
+        {
+            _logger = logger;
+        }
+
         [GraphQLName("createJob")]
         [GraphQLDescription("Add new job to the database.")]
         public async Task<Job> CreateJobAsync(JobInput jobInput, [Service] IJobService jobService)
@@ -30,7 +37,10 @@ namespace SimpleQuarterlyApplication.GraphQL.API.Mutations
         {
             var job = await jobService.Get(id);
             if (job == null)
+            {
+                _logger.LogWarning("Job not found. Can't update job.");
                 throw new GraphQLException(new Error("Job not found.", "JOB_NOT_FOUND"));
+            }
 
             job.Id = IdGenerator.GenerateId();
             job.Salary = jobInput.Salary;

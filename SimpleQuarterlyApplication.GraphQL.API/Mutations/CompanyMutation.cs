@@ -8,6 +8,13 @@ namespace SimpleQuarterlyApplication.GraphQL.API.Mutations
     [ExtendObjectType("Mutation")]
     public class CompanyMutation
     {
+        private readonly ILogger _logger;
+
+        public CompanyMutation(ILogger<CompanyMutation> logger)
+        {
+            _logger = logger;
+        }
+
         [GraphQLName("createCompany")]
         [GraphQLDescription("Add new company to the database.")]
         public async Task<Company> CreateCompanyAsync(CompanyInput companyInput, [Service] ICompanyService companyService)
@@ -30,7 +37,10 @@ namespace SimpleQuarterlyApplication.GraphQL.API.Mutations
         {
             var company = await companyService.Get(id);
             if (company == null)
+            {
+                _logger.LogWarning("Company not found. Can't update company.");
                 throw new GraphQLException(new Error("Company not found.", "COMPANY_NOT_FOUND"));
+            }
 
             company.Name = companyInput.Name;
             company.Description = companyInput.Description;

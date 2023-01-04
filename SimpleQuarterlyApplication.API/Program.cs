@@ -7,6 +7,7 @@ using SimpleQuarterlyApplication.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddApplicationInsightsTelemetry();
 builder.Services.AddDbContext<SimpleQuarterlyApplicationContext>();
 
 builder.Services.AddScoped<ICandidateService, CandidateService>();

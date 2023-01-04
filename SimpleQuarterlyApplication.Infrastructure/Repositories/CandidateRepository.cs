@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using SimpleQuarterlyApplication.Core.Entities;
 using SimpleQuarterlyApplication.Core.Interfaces.Repositories;
 
@@ -6,8 +7,10 @@ namespace SimpleQuarterlyApplication.Infrastructure.Repositories
 {
     public class CandidateRepository : CosmosRepository, ICandidateRepository
     {
-        public CandidateRepository(SimpleQuarterlyApplicationContext context) : base(context)
+        private readonly ILogger _logger;
+        public CandidateRepository(ILogger<CandidateRepository> logger, SimpleQuarterlyApplicationContext context) : base(context)
         {
+            _logger = logger;
         }
 
         public async Task<IEnumerable<Candidate>> Get() => await _context.Candidates.ToListAsync();
@@ -15,13 +18,20 @@ namespace SimpleQuarterlyApplication.Infrastructure.Repositories
 
         public async Task<Candidate> Create(Candidate candidate)
         {
+            _logger.LogInformation("Candidate create start");
+            
             await _context.Candidates.AddAsync(candidate);
             await _context.SaveChangesAsync();
+
+            _logger.LogInformation("Candidate create end");
+
             return candidate;
         }
 
         public async Task<bool> Update(Candidate candidate, string id)
         {
+            _logger.LogInformation("Candidate update start");
+
             var elementToUpdate = _context.Candidates.Where(x => x.Id == id).FirstOrDefault();
 
             if (elementToUpdate == null)
@@ -32,6 +42,8 @@ namespace SimpleQuarterlyApplication.Infrastructure.Repositories
             elementToUpdate = candidate;
             _context.Update(elementToUpdate);
             await _context.SaveChangesAsync();
+
+            _logger.LogInformation("Candidate update end");
 
             return true;
         }
