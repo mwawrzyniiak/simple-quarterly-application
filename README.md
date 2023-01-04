@@ -2,6 +2,7 @@
 ## Table of contents
 * [Getting Started](#getting-started)
 * [Project Diagram](#project-diagram)
+* [Solution Architecture](#solution-architecture)
 * [Minimal API](#minimal-api)
 * [GraphQL API](#graphql-api)
 * [Dependencies](#dependencies)
@@ -23,6 +24,9 @@ Quarterly target requirements:
 
 ## Project Diagram  
 ![System Diagram](https://user-images.githubusercontent.com/35369071/210336315-ae1dd7c7-396d-410f-8c10-b6d3e4e27821.png)
+
+## Solution Architecture
+![Architecture](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/media/image5-7.png)
 
 ## Minimal API  
 ### Candidates  
