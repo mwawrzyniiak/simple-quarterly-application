@@ -82,7 +82,8 @@ Queries and mutations could be defined to allow users to perform actions such as
 
 simple-quarterly-application repository depends on a few packages:  
 * [Microsoft.EntityFrameworkcore.Cosmos](https://learn.microsoft.com/pl-pl/ef/core/providers/cosmos/?tabs=dotnet-core-cli)  
-* [HotChocolate.AspNetCore](https://chillicream.com/docs/hotchocolate/v12/get-started)    
+* [HotChocolate.AspNetCore](https://chillicream.com/docs/hotchocolate/v12/get-started)  
+* [Microsoft Application Insights](https://learn.microsoft.com/pl-pl/azure/azure-monitor/app/asp-net-core?tabs=netcorenew%2Cnetcore6)  
 
 ## Built With
 
