@@ -84,6 +84,7 @@ simple-quarterly-application repository depends on a few packages:
 * [Microsoft.EntityFrameworkcore.Cosmos](https://learn.microsoft.com/pl-pl/ef/core/providers/cosmos/?tabs=dotnet-core-cli)  
 * [HotChocolate.AspNetCore](https://chillicream.com/docs/hotchocolate/v12/get-started)  
 * [Microsoft Application Insights](https://learn.microsoft.com/pl-pl/azure/azure-monitor/app/asp-net-core?tabs=netcorenew%2Cnetcore6)  
+* [Microsoft Application Insights pt2](https://learn.microsoft.com/en-us/azure/azure-monitor/app/performance-counters?tabs=net-core-new)
 
 ## Built With
 
