@@ -85,6 +85,7 @@ simple-quarterly-application repository depends on a few packages:
 * [HotChocolate.AspNetCore](https://chillicream.com/docs/hotchocolate/v12/get-started)  
 * [Microsoft Application Insights](https://learn.microsoft.com/pl-pl/azure/azure-monitor/app/asp-net-core?tabs=netcorenew%2Cnetcore6)  
 * [Microsoft Application Insights pt2](https://learn.microsoft.com/en-us/azure/azure-monitor/app/performance-counters?tabs=net-core-new)
+* [FluentValidation.AspNetCore](https://docs.fluentvalidation.net/en/latest/aspnet.html)
 
 ## Built With
 
