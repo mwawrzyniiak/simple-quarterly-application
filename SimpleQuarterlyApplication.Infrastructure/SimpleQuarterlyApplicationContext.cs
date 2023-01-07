@@ -30,15 +30,15 @@ namespace SimpleQuarterlyApplication.Infrastructure
                 .ToContainer("Candidates")
                 .HasPartitionKey(e => e.Id);
 
-            //modelBuilder.Entity<Company>()
-            //    .HasManualThroughput(1000)
-            //    .ToContainer("Companies")
-            //    .HasPartitionKey(e => e.Id);
-            //
-            //modelBuilder.Entity<Job>()
-            //    .HasManualThroughput(1000)
-            //    .ToContainer("Jobs")
-            //    .HasPartitionKey(e => e.Id);
+            modelBuilder.Entity<Company>()
+                .HasManualThroughput(1000)
+                .ToContainer("Companies")
+                .HasPartitionKey(e => e.Id);
+            
+            modelBuilder.Entity<Job>()
+                .HasManualThroughput(1000)
+                .ToContainer("Jobs")
+                .HasPartitionKey(e => e.Id);
         }
     }
 }
