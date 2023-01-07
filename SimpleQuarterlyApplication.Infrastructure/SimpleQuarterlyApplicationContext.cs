@@ -26,7 +26,7 @@ namespace SimpleQuarterlyApplication.Infrastructure
         {
             //in free azure account you can not use more than 400 ru :)...
             modelBuilder.Entity<Candidate>()
-                .HasManualThroughput(400)
+                .HasManualThroughput(1000)
                 .ToContainer("Candidates")
                 .HasPartitionKey(e => e.Id);
 
