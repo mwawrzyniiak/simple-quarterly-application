@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using SimpleQuarterlyApplication.Core.Entities;
 using SimpleQuarterlyApplication.Core.Interfaces.Repositories;
 using SimpleQuarterlyApplication.Core.Interfaces.Services;
@@ -64,7 +65,7 @@ app.MapDelete("/companies/{id}", async (ICompanyService companyService, string i
 
 #endregion
 
-#region JOB CRUd
+#region JOB CRUD
 
 app.MapGet("/jobs", async (IJobService jobService) => await jobService.Get());
 app.MapGet("/jobs/{id}", async (IJobService jobService, string id) => await jobService.Get(id));
@@ -82,6 +83,28 @@ app.MapDelete("/companies/{id}", async (IJobService jobService, string id) =>
 {
     var result = await jobService.Delete(id);
     return result == true ? Results.Ok(id) : Results.Problem("Job delete fail");
+});
+
+#endregion
+
+#region AZURE FUNCTION
+
+app.MapGet("/simple", async () =>
+{
+    HttpClient client = new HttpClient();
+    var response = await client.GetAsync(Config.SIMPLE_HTTP_FUNCTION_URL);
+    var text = await response.Content.ReadAsStringAsync();
+
+    return new OkObjectResult(text);
+});
+
+app.MapGet("/bad", async () =>
+{
+    HttpClient client = new HttpClient();
+    var response = await client.GetAsync(Config.BAD_RESULT_FUNCTION_URL);
+    var text = await response.Content.ReadAsStringAsync();
+
+    return new OkObjectResult(text);
 });
 
 #endregion

@@ -5,11 +5,14 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/6697ee55-165b-4ea0-8545-b0a4d9008fc4/resourceGroups/mw-appinsights/providers/microsoft.insights/components/mw-simple-quarterly-application</ApplicationInsightsResourceId>
+    <UserSecretsId>3f11cadd-69c3-437a-9c9a-95a336a2fe17</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="HotChocolate.AspNetCore" Version="12.15.2" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.PerfCounterCollector" Version="2.21.0" />
   </ItemGroup>
 
   <ItemGroup>

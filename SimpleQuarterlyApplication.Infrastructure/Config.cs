@@ -2,8 +2,11 @@
 {
     public static class Config
     {
-        public static string URI = "https://localhost:8081";
-        public static string PRIMARY_KEY = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
+        public static string URI = "";
+        public static string PRIMARY_KEY = "";
         public static string DATABASE_NAME = "Test";
+
+        public static string SIMPLE_HTTP_FUNCTION_URL = "";
+        public static string BAD_RESULT_FUNCTION_URL = "";
     }
 }

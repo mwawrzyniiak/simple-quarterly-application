@@ -24,17 +24,21 @@ namespace SimpleQuarterlyApplication.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //in free azure account you can not use more than 400 ru :)...
             modelBuilder.Entity<Candidate>()
+                .HasManualThroughput(400)
                 .ToContainer("Candidates")
                 .HasPartitionKey(e => e.Id);
 
-            modelBuilder.Entity<Company>()
-                .ToContainer("Companies")
-                .HasPartitionKey(e => e.Id);
-
-            modelBuilder.Entity<Job>()
-                .ToContainer("Jobs")
-                .HasPartitionKey(e => e.Id);
+            //modelBuilder.Entity<Company>()
+            //    .HasManualThroughput(1000)
+            //    .ToContainer("Companies")
+            //    .HasPartitionKey(e => e.Id);
+            //
+            //modelBuilder.Entity<Job>()
+            //    .HasManualThroughput(1000)
+            //    .ToContainer("Jobs")
+            //    .HasPartitionKey(e => e.Id);
         }
     }
 }
