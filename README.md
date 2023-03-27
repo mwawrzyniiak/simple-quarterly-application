@@ -102,7 +102,13 @@ git clone https://github.com/mwawrzyniiak/simple-quarterly-application.git
 * [CosmosDB Emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=ssl-netstd21) - for work with CosmosDB
 
 ## Deployment  
-Git clone, rebuild and run! :) 
+1. Clone the repository.  
+2. In the config.cs file, you need to fill in the following (from Azure DB emulator or resource):  
+* public static string URI = "";  
+* public static string PRIMARY_KEY = "";  
+* public static string DATABASE_NAME = "";  
+3. Rebuid, run.  
+4. Call any GET method.  
 
 ## Contributing
 
