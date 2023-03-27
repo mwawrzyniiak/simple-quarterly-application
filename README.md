@@ -47,7 +47,9 @@ source: https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-az
 * **/jobs/{id}** - GET - get job by id. 
 * **/jobs** - POST - create new job.  
 * **/jobs/{id}** - PUT - update job by id.  
-* **/jobs/{id}** - DELETE - delete job by id.  
+* **/jobs/{id}** - DELETE - delete job by id.
+### Example posts:
+You can find sample posts in Examples/post.txt.  
 
 ## GraphQL API  
 The GraphQL API for the job board or recruiting platform would allow users to interact with data related to job openings, candidates, and companies. Some possible types included in the schema are:
@@ -103,7 +105,7 @@ git clone https://github.com/mwawrzyniiak/simple-quarterly-application.git
 
 ## Deployment  
 1. Clone the repository.  
-2. In the config.cs file, you need to fill in the following (from Azure DB emulator or resource):
+2. In the config.cs file, you need to fill in the following (from Azure DB emulator or resource):  
   public static string URI = "";  
   public static string PRIMARY_KEY = "";  
   public static string DATABASE_NAME = "";  
