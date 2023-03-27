@@ -1,1 +1,125 @@
+Candidates:
+
+{
+    "Id": "1",
+    "Name": "Anna Kowalska",
+    "Email": "anna.kowalska@example.com",
+    "Resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "Skills": ["JavaScript", "React", "HTML", "CSS"]
+}
+
+{
+    "Id": "2",
+    "Name": "Tomasz Nowak",
+    "Email": "tomasz.nowak@example.com",
+    "Resume": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "Skills": ["Java", "Spring", "SQL"]
+}
+
+{
+    "Id": "3",
+    "Name": "Marta Lewandowska",
+    "Email": "marta.lewandowska@example.com",
+    "Resume": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Skills": ["Python", "Django", "RESTful APIs"]
+}
+
+{
+    "Id": "4",
+    "Name": "Jan Kowalczyk",
+    "Email": "jan.kowalczyk@example.com",
+    "Resume": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+    "Skills": ["C#", ".NET", "Azure"]
+}
+
+{
+    "Id": "5",
+    "Name": "Alicja Zając",
+    "Email": "alicja.zajac@example.com",
+    "Resume": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    "Skills": ["Ruby", "Rails", "PostgreSQL"]
+}
+
+Compnay:
+
+{
+    "Id": "1",
+    "Name": "Acme Inc.",
+    "Industry": "Technology",
+    "Website": "https://www.acmeinc.com",
+    "Description": "Acme Inc. is a leading provider of innovative technology solutions."
+}
+
+{
+    "Id": "2",
+    "Name": "Globex Corporation",
+    "Industry": "Manufacturing",
+    "Website": "https://www.globexcorp.com",
+    "Description": "Globex Corporation is a multinational conglomerate with operations in over 50 countries."
+}
+
+{
+    "Id": "3",
+    "Name": "Smith and Co.",
+    "Industry": "Finance",
+    "Website": "https://www.smithandco.com",
+    "Description": "Smith and Co. is a boutique investment bank that specializes in mergers and acquisitions."
+}
+
+{
+    "Id": "4",
+    "Name": "Johnson Enterprises",
+    "Industry": "Real Estate",
+    "Website": "https://www.johnsonenterprises.com",
+    "Description": "Johnson Enterprises is a leading developer of luxury residential properties."
+}
+
+{
+    "Id": "5",
+    "Name": "ABC Industries",
+    "Industry": "Retail",
+    "Website": "https://www.abcindustries.com",
+    "Description": "ABC Industries is a family-owned chain of department stores with locations throughout the Midwest."
+}
+
+Job:
+{
+    "Id": "1",
+    "Title": "Software Developer",
+    "Description": "We are seeking a talented software developer to join our team and help us build innovative products that make a difference in people's lives.",
+    "Location": "San Francisco, CA",
+    "Salary": 100000.00
+}
+
+{
+    "Id": "2",
+    "Title": "Marketing Manager",
+    "Description": "We are looking for a skilled marketing manager to lead our marketing initiatives and help us grow our business.",
+    "Location": "New York, NY",
+    "Salary": 90000.00
+}
+
+{
+    "Id": "3",
+    "Title": "Accountant",
+    "Description": "We are seeking a highly motivated accountant to join our team and help us manage our finances effectively.",
+    "Location": "Chicago, IL",
+    "Salary": 75000.00
+}
+
+{
+    "Id": "4",
+    "Title": "Project Manager",
+    "Description": "We are seeking an experienced project manager to oversee our projects and ensure that they are completed on time and within budget.",
+    "Location": "Seattle, WA",
+    "Salary": 110000.00
+}
+
+{
+    "Id": "5",
+    "Title": "Sales Representative",
+    "Description": "We are seeking a dynamic sales representative to help us expand our customer base and increase our revenue.",
+    "Location": "Austin, TX",
+    "Salary": 80000.00
+}
 
