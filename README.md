@@ -119,7 +119,3 @@ Just send pull request and we'll see what to do with it.
 ## Authors
 
 * **Maciej Wawrzyniak** 
-
-## License
-
-TODO
